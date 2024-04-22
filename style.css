@@ -3,8 +3,12 @@ body{
     text-align: center;
     font-family: 'Times New Roman';
     background-color: antiquewhite;
+    font-size: 20px;
 }
 
+header{
+    text-align: center;
+}
 #Calculadora{
     background-color: pink;
     padding-top: 1%;
@@ -12,6 +16,7 @@ body{
     margin-right: 30%;
     margin-left: 40%;
     width: 20%;
+    border-radius: 10%;
 }
 
 #titulo{
@@ -22,6 +27,25 @@ body{
 
 #minebotao{
     background-color: palevioletred;
-    width: 200px;
-    padding-top: 1%;
+    width: 300px;
+    height: 30px;
+}
+
+.arrumadinho{
+    text-align: left;
+    margin-left: 10%;
+}
+
+#espaco{
+    margin-top: 2%;
+}
+
+#operacao{
+    width: 300px;
+    height: 30px;
+}
+
+.caixa{
+    width: 300px;
+    height: 30px;
 }

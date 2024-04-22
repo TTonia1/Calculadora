@@ -14,19 +14,21 @@
     </header>
     <div id="Calculadora">
         <p id="titulo">Calculadora</p>
-        <p>Escolha uma operação</p>
+        <p class="arrumadinho">Escolha uma operação</p>
         <select name="operacao" id="operacao">
             <option value="soma">Soma</option>
             <option value="subtracao">Subtração</option>
             <option value="vezes">Multiplicação</option>
             <option value="divisao">Divisão</option>
         </select>
-        <p>Digite o primeiro número:</p>
-        <input type="text" id="numeroA">
-        <p>Digite o segundo número:</p>
-        <input type="text" id="numeroB">
-        <button id="minebotao"onclick="calcular()">Calcular</button>
-        <p id="resultado"> Seu resultado foi:</p>
+        <p class="arrumadinho">Digite o primeiro número:</p>
+        <input class="caixa" type="text" id="numeroA">
+        <p class="arrumadinho">Digite o segundo número:</p>
+        <input class="caixa" type="text" id="numeroB">
+        <div id="espaco">
+            <button id="minebotao"onclick="calcular()">Calcular</button>
+            <p id="resultado"> Seu resultado foi:</p>
+        </div>
     </div>
 </body>
 </html>

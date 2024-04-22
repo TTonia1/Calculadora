@@ -1,25 +1,32 @@
 
 function calcular(){
-    const numeroA = document.getElementById('numeroA').value;
-    const numeroB = document.getElementById('numeroB').value;
-    const operacao = document.getElementById('operacao').value;
-    var resultado;
-    switch (operacao) {
+    var numeroA = document.getElementById('numeroA');
+    var numeroB = document.getElementById('numeroB');
+    var operacao = document.getElementById('operacao');
+    var final = document.getElementById('resultado');
+    var resultado = 0;
+    var numeroUm = Number(numeroA.value);
+    var numeroDois = Number(numeroB.value);
+    var selecionada = (operacao.value);
+    switch (selecionada) {
         case 'soma':
-            resultado = numeroA + numeroB;
+            resultado = numeroUm + numeroDois;
+            final.innerHTML = resultado;
             break;
         case 'subtracao':
-            result = numeroA - numeroB;
+            resultado = numeroUm - numeroDois;
+            final.innerHTML = resultado;
             break;
         case 'vezes':
-            result = num1 * num2;
+            resultado = numeroUm * numeroDois;
+            final.innerHTML = resultado;
             break;
-        case 'dividido':
-            result = num1 / num2;
+        case 'divisao':
+            resultado = numeroUm / numeroDois;
+            final.innerHTML = resultado;
             break;
         default:
-            result = 'Operação Inválida';
+            resultado = 'Operação Inválida';
             break;
     }
-    document.getElementById('resultado').textContent = resultado;
 }
