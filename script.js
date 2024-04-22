@@ -1,19 +1,25 @@
+
 function calcular(){
-    var numeroA = document.getElementById('numeroA');
-    var numeroB = document.getElementById('numeroB');
-    var operacao = document.getElementById('operacao');
-    var resultado = document.getElementById('resultado');
-    if(operacao =='soma'){
-        var r = numeroA+numeroB;
+    const numeroA = document.getElementById('numeroA').value;
+    const numeroB = document.getElementById('numeroB').value;
+    const operacao = document.getElementById('operacao').value;
+    var resultado;
+    switch (operacao) {
+        case 'soma':
+            resultado = numeroA + numeroB;
+            break;
+        case 'subtracao':
+            result = numeroA - numeroB;
+            break;
+        case 'vezes':
+            result = num1 * num2;
+            break;
+        case 'dividido':
+            result = num1 / num2;
+            break;
+        default:
+            result = 'Operação Inválida';
+            break;
     }
-    if (operacao == 'subtracao'){
-        var r = numeroA+numeroB;
-    }
-    if (operacao == 'multiplicacao'){
-        var r = numeroA*numeroB;
-    }
-    if (operacao == 'divisao'){
-        var r = numeroA/numeroB;
-    }
-    resultado.innerHTML = `${r}`
+    document.getElementById('resultado').textContent = resultado;
 }

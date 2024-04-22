@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <script>src="srcipt.js"</script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -13,17 +13,20 @@
         <h2>DS24/M2</h2>
     </header>
     <div id="Calculadora">
-        <input type="number" id="numeroA">
-        <input type="number" id="numeroB">
-        <button type="button"  id="button" onclick="calcular()">Calcular</button>
-        <select id="operacao">
-            <option value="soma">+</option>
-            <option value="subtracao">-</option>
-            <option value="vezes">*</option>
-            <option value="divisao">/</option>
+        <p id="titulo">Calculadora</p>
+        <p>Escolha uma operação</p>
+        <select name="operacao" id="operacao">
+            <option value="soma">Soma</option>
+            <option value="subtracao">Subtração</option>
+            <option value="vezes">Multiplicação</option>
+            <option value="divisao">Divisão</option>
         </select>
-        <p id="resultado">Resultado</p>
+        <p>Digite o primeiro número:</p>
+        <input type="text" id="numeroA">
+        <p>Digite o segundo número:</p>
+        <input type="text" id="numeroB">
+        <button id="minebotao"onclick="calcular()">Calcular</button>
+        <p id="resultado"> Seu resultado foi:</p>
     </div>
-    
 </body>
 </html>
